@@ -1,8 +1,12 @@
+@font-face {
+    font-family: Frozen; /* Гарнитура шрифта */
+    src: url(../../fonts/10451.ttf); /* Путь к файлу со шрифтом */
+   }
 
 .logo-text {
-  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-family: Frozen;
   font-size: 50px;
-  color: #d4cfd1;
+  color: #F2F2F2;
   margin-left: 5%;
   margin-top: 20%;
   vertical-align: middle;
@@ -31,7 +35,7 @@
 
 @media only screen and (max-height: 2500px) and (min-height: 300px) and (min-width: 300px){
   .body {
-    background-position: 50% !important;
+    background-position: 100% !important;
   }
 }
 
@@ -282,7 +286,7 @@
 }
 
 body {
-  background-image: url("../../images/textures/texture1_n.jpg") ;
+  background-image: url("../../images/textures/texture1_n_blur.jpg") ;
   background-attachment: fixed;
   background-size: cover;
   z-index: -1;
@@ -371,7 +375,7 @@ body .footer .extern_links ul {
   padding: 0;
 }
 body .footer .extern_links ul li {
-  margin: 0 6px;
+  margin: 0 5px;
   display: inline-block;
   list-style: none;
 }
