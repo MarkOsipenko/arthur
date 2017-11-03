@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Frozen; /* Гарнитура шрифта */
-    src: url(../../fonts/10451.ttf); /* Путь к файлу со шрифтом */
+    font-family: Frozen;
+    src: url(../../fonts/10451.ttf);
    }
 
 .logo-text {
@@ -34,7 +34,7 @@
 }
 
 @media only screen and (max-height: 2500px) and (min-height: 300px) and (min-width: 300px){
-  .body {
+  .body::before {
     background-position: 100% !important;
   }
 }
@@ -206,8 +206,6 @@
   }
 }
 
-
-
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .logo-text {
     font-size: 35px;
@@ -285,17 +283,29 @@
   }
 }
 
+body:before {
+    content: '';
+    background-image: url("../../images/textures/texture1_n_blur.jpg") ;
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 body {
-  background-image: url("../../images/textures/texture1_n_blur.jpg") ;
-  background-size: cover;
+  /*background-image: url("../../images/textures/texture1_n_blur.jpg") ;*/
+  /*background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover;*/
 
-  background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
-  -o-background-attachment: fixed;
+  /*background-attachment: fixed;*/
+  /*-webkit-background-size:  ;*/
+
 
   z-index: -1;
 }
